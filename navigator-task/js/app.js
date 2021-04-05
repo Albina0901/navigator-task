@@ -78,4 +78,18 @@ breakpoints: {
 },
 });
 
+// Modal
+let headerBtn = document.querySelector('.header__btn');
+let popupCall = document.querySelector('.popup-call');
+let popupClose= document.querySelector('.popup-call__close');
+
+headerBtn.addEventListener('click', function() {
+	popupCall.style.visibility = "visible";
+	popupCall.style.opacity = "1";
+});
+
+popupClose.addEventListener('click', function() {
+	popupCall.style.visibility = "hidden";
+	popupCall.style.opacity = "0";
+});
 
