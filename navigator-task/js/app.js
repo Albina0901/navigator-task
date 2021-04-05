@@ -78,28 +78,4 @@ breakpoints: {
 },
 });
 
-var swiper = new Swiper('.plots__slider', {
-slidesPerView: 1,
-centeredSlides: false,
-spaceBetween: 0,
-pagination: {
-	el: '.swiper-pagination',
-	clickable: true,
-},
-navigation: {
-	nextEl: '.swiper-button-next',
-	prevEl: '.swiper-button-prev',
-},
-// breakpoints: {
-// 	320: {
-// 		slidesPerView: 1,
-// 	},
-// 	480: {
-// 		slidesPerView: 2,
-// 	},
-// 	992: {
-// 		slidesPerView: 2,
-// 	}
-// },
-});
 
