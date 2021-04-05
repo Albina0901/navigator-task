@@ -28,9 +28,11 @@
         <button class="header__btn btn">Заказать звонок</button>
         <!-- Бургер меню -->
         <div class="header__burger">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="header__burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 </header>
@@ -50,57 +52,59 @@
 				<section class="excellence">
 					<div class="container">
 						<div class="border2">
-							<div class="excellence__inner">
-								<div class="excellence__item">
-									<div class="excellence__item-img _fast">
-										<img src="img/icons/fast.svg" alt="Иконка">
+							<div class="excellence__slider swiper-container">
+								<div class="excellence__inner swiper-wrapper">
+									<div class="excellence__item swiper-slide">
+										<div class="excellence__item-img _fast">
+											<img src="img/icons/fast.svg" alt="Иконка">
+										</div>
+										<div class="excellence__item-text">
+											<h4 class="excellence__item-title">
+												Близость к городу
+											</h4>
+											<p class="excellence__item-description">
+												20 минут до центра Тюмени
+											</p>
+										</div>
 									</div>
-									<div class="excellence__item-text">
-										<h4 class="excellence__item-title">
-											Близость к городу
-										</h4>
-										<p class="excellence__item-description">
-											20 минут до центра Тюмени
-										</p>
+									<div class="excellence__item swiper-slide">
+										<div class="excellence__item-img _leaf">
+											<img src="img/icons/leaf.svg" alt="Иконка">
+										</div>
+										<div class="excellence__item-text">
+											<h4 class="excellence__item-title">
+												Экология
+											</h4>
+											<p class="excellence__item-description">
+												Леса, реки - живописная природа. Тишина и покой
+											</p>
+										</div>
 									</div>
-								</div>
-								<div class="excellence__item">
-									<div class="excellence__item-img _leaf">
-										<img src="img/icons/leaf.svg" alt="Иконка">
+									<div class="excellence__item swiper-slide">
+										<div class="excellence__item-img _network">
+											<img src="img/icons/network.svg" alt="Иконка">
+										</div>
+										<div class="excellence__item-text">
+											<h4 class="excellence__item-title">
+												Инфраструктура
+											</h4>
+											<p class="excellence__item-description">
+												Рядом школы, больницы, детские сады, магазины
+											</p>
+										</div>
 									</div>
-									<div class="excellence__item-text">
-										<h4 class="excellence__item-title">
-											Экология
-										</h4>
-										<p class="excellence__item-description">
-											Леса, реки - живописная природа. Тишина и покой
-										</p>
-									</div>
-								</div>
-								<div class="excellence__item">
-									<div class="excellence__item-img _network">
-										<img src="img/icons/network.svg" alt="Иконка">
-									</div>
-									<div class="excellence__item-text">
-										<h4 class="excellence__item-title">
-											Инфраструктура
-										</h4>
-										<p class="excellence__item-description">
-											Рядом школы, больницы, детские сады, магазины
-										</p>
-									</div>
-								</div>
-								<div class="excellence__item">
-									<div class="excellence__item-img _idea">
-										<img src="img/icons/idea.svg" alt="Иконка">
-									</div>
-									<div class="excellence__item-text">
-										<h4 class="excellence__item-title">
-											Коммуникации
-										</h4>
-										<p class="excellence__item-description">
-											Все коммуникации включены в стоимость
-										</p>
+									<div class="excellence__item swiper-slide">
+										<div class="excellence__item-img _idea">
+											<img src="img/icons/idea.svg" alt="Иконка">
+										</div>
+										<div class="excellence__item-text">
+											<h4 class="excellence__item-title">
+												Коммуникации
+											</h4>
+											<p class="excellence__item-description">
+												Все коммуникации включены в стоимость
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -110,26 +114,25 @@
 				<!-- Первый слайдер -->
 				<section class="cottage">
 					<div class="container">
-						<div class="slider swiper-container">
+						<div class="cottage__slider _tabs">
 							<div class="cottage__inner tabs__wrapper">
 								<div class="cottage__tabs tabs">
-									<a class="cottage__tab tab _active">Списком</ф>
-									<a class="cottage__tab tab">На карте</a>
+									<a class="cottage__tab tab _tab _active">Списком</ф>
+									<a class="cottage__tab tab _tab">На карте</a>
 								</div>
 								<div class="cottage__control control">
-									<svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg class="swiper-button-prev width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM22 10.5L2 10.5V13.5L22 13.5V10.5Z" fill="#D1D1D1"/>
 									</svg>
 									<div class="control__dots">
-										<span class="_active"></span>
-										<span></span>
+										<div class="swiper-pagination"></div>
 									</div>
-									<svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg class="swiper-button-next" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path class="_active" d="M21.0607 13.0607C21.6464 12.4749 21.6464 11.5251 21.0607 10.9393L11.5147 1.3934C10.9289 0.807611 9.97919 0.807611 9.3934 1.3934C8.80761 1.97919 8.80761 2.92893 9.3934 3.51472L17.8787 12L9.3934 20.4853C8.80761 21.0711 8.80761 22.0208 9.3934 22.6066C9.97919 23.1924 10.9289 23.1924 11.5147 22.6066L21.0607 13.0607ZM0 13.5L20 13.5V10.5L0 10.5L0 13.5Z" fill="#D1D1D1"/>
 									</svg>
 								</div>
 							</div>
-							<div class="cottage__slider swiper-wrapper">
+							<div class="cottage__container swiper-wrapper _active">
 								<div class="cottage__slider-item swiper-slide">
 									<a class="cottage__slider-link" href="">
 										<div class="cottage__slider-top" style="background: url(img/sl-01.jpg) no-repeat top center / cover;">
@@ -346,6 +349,7 @@
 									</a>
 								</div>
 							</div>
+							<iframe class="map block" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5dde86bd220da47e98b481eb49cd4440af0f81c1caae6098a1580f409de60c83&amp;source=constructor" width="100%" height="547" frameborder="0"></iframe>
 						</div>
 					</div>
 				</section>
@@ -387,7 +391,7 @@
 						<h2>О компании</h2>
 						<div class="about__inner">
 							<div class="about__block">
-								<div class="about__slider" style="background: url(img/sl1-01.jpg) no-repeat top center / cover;">
+								<div class="about__container" style="background: url(img/sl1-01.jpg) no-repeat top center / cover;">
 									<div class="about__slider-dots">
 										<span class="_active"></span>
 										<span></span>
@@ -433,16 +437,16 @@
 				</section>
 				<!-- Покупка -->
 				<section class="order">
-					<div class="container">
+					<div class="container _tabs">
 						<h2>Купить участок просто</h2>
 						<div class="order__tabs tabs">
-							<a class="order__tab tab _active">Этапы покупки</ф>
-							<a class="order__tab tab">Рассрочка</a>
-							<a class="order__tab tab" >Ипотека</a>
+							<a class="order__tab _tab tab _active">Этапы покупки</ф>
+							<a class="order__tab _tab tab">Рассрочка</a>
+							<a class="order__tab _tab tab" >Ипотека</a>
 						</div>
-						<div class="order__inner">
+						<div class="order__inner order__content-one block _active">
 							<div class="order__inner-block">
-								<div class="order__item _one">
+								<div class="order__item _one _line">
 									<div class="order__item-img _form">
 										<img src="img/icons/form.svg" alt="Иконка">
 									</div>
@@ -450,7 +454,7 @@
 								<p>Оставьте заявку на обратный звонок</p>
 							</div>
 							<div class="order__inner-block">
-								<div class="order__item _two">
+								<div class="order__item _two _line">
 									<div class="order__item-img _call">
 										<img src="img/icons/call.svg" alt="Иконка">
 									</div>
@@ -458,7 +462,7 @@
 								<p>Мы позвоним и пригласим вас на экскурсию или в офис</p>
 							</div>
 							<div class="order__inner-block">
-								<div class="order__item _three">
+								<div class="order__item _three _line">
 									<div class="order__item-img _card">
 										<img src="img/icons/card.svg" alt="Иконка">
 									</div>
@@ -466,12 +470,88 @@
 								<p>Выберем с вами удобный способ оплаты</p>
 							</div>
 							<div class="order__inner-block">
-								<div class="order__item _four">
+								<div class="order__item _four _line">
 									<div class="order__item-img _plant">
 										<img src="img/icons/plant.svg" alt="Иконка">
 									</div>
 								</div>
 								<p>Участок ваш!</p>
+							</div>
+						</div>
+						<div class="order__inner order__content-two block">
+							<div class="order__inner-block">
+								<div class="order__item _one">
+									<div class="order__item-img _form">
+										<img src="img/icons/piggy.svg" alt="Иконка">
+									</div>
+								</div>
+								<h4>Выгодно</h4>
+								<p>0% без переплат до 12 месяцев</p>
+							</div>
+							<div class="order__inner-block">
+								<div class="order__item _two">
+									<div class="order__item-img _call">
+										<img src="img/icons/like.svg" alt="Иконка">
+									</div>
+								</div>
+								<h4>Удобно</h4>
+								<p>Первоначальный платеж от 30 000 рублей</p>
+							</div>
+							<div class="order__inner-block">
+								<div class="order__item _three">
+									<div class="order__item-img _card">
+										<img src="img/icons/secure.svg" alt="Иконка">
+									</div>
+								</div>
+								<h4>Гарантированно</h4>
+								<p>Предварительное одобрение 100%</p>
+							</div>
+							<div class="order__inner-block">
+								<div class="order__item _four">
+									<div class="order__item-img _plant">
+										<img src="img/icons/star.svg" alt="Иконка">
+									</div>
+								</div>
+								<h4>Эксклюзивно</h4>
+								<p>Индивидуальное обсуждение условий</p>
+							</div>
+						</div>
+						<div class="order__inner order__content-three block">
+							<div class="order__inner-block">
+								<div class="order__item _one">
+									<div class="order__item-img _form">
+										<img src="img/icons/bank.svg" alt="Иконка">
+									</div>
+								</div>
+								<h4>Ведущие банки</h4>
+								<p>«Сбербанк» и «Запсибкомбанк»</p>
+							</div>
+							<div class="order__inner-block">
+								<div class="order__item _two">
+									<div class="order__item-img _call">
+										<img src="img/icons/percentage.svg" alt="Иконка">
+									</div>
+								</div>
+								<h4>% Ставки</h4>
+								<p>от 10,8%</p>
+							</div>
+							<div class="order__inner-block">
+								<div class="order__item _three">
+									<div class="order__item-img _card">
+										<img src="img/icons/wallet.svg" alt="Иконка">
+									</div>
+								</div>
+								<h4>Первоначальный взнос</h4>
+								<p>от 0%</p>
+							</div>
+							<div class="order__inner-block">
+								<div class="order__item _four">
+									<div class="order__item-img _plant">
+										<img src="img/icons/clock.svg" alt="Иконка">
+									</div>
+								</div>
+								<h4>Срок</h4>
+								<p>от 7 до 30 лет</p>
 							</div>
 						</div>
 					</div>
@@ -522,7 +602,7 @@
 										<h3>Уличное освещение</h3>
 									</div>
 								</div>
-								<div class="plots__slider">
+								<div class="plots__container">
 									<div class="plots__flex">
 										<div class="plots__slider-text">
 											<h3>Программа «Лояльный покупатель»</h3>
@@ -535,14 +615,14 @@
 									<div class="plots__content">
 										<a href="" class="plots__btn btn">Подобрать участок</a>
 										<div class="plots__control control">
-											<svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM22 10.5L2 10.5V13.5L22 13.5V10.5Z" fill="#D1D1D1"/>
 											</svg>
 											<div class="control__dots">
 												<span class="_active"></span>
 												<span></span>
 											</div>
-											<svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path class="_active" d="M21.0607 13.0607C21.6464 12.4749 21.6464 11.5251 21.0607 10.9393L11.5147 1.3934C10.9289 0.807611 9.97919 0.807611 9.3934 1.3934C8.80761 1.97919 8.80761 2.92893 9.3934 3.51472L17.8787 12L9.3934 20.4853C8.80761 21.0711 8.80761 22.0208 9.3934 22.6066C9.97919 23.1924 10.9289 23.1924 11.5147 22.6066L21.0607 13.0607ZM0 13.5L20 13.5V10.5L0 10.5L0 13.5Z" fill="#D1D1D1"/>
 											</svg>
 										</div>
@@ -595,27 +675,26 @@
 				<section class="news">
 					<div class="container">
 						<h2>А что у нас нового?</h2>
-						<div class="slider swiper-container">
+						<div class="news__slider _tabs">
 							<div class="news__inner tabs__wrapper">
 								<div class="news__tabs tabs">
-									<a class="news__tab tab _active">Новости</ф>
-									<a class="news__tab tab">Истории жителей</a>
-									<a class="news__tab tab" >Полезные статьи</a>
+									<a class="news__tab tab _tab _active">Новости</a>
+									<a class="news__tab tab _tab">Истории жителей</a>
+									<a class="news__tab tab _tab">Полезные статьи</a>
 								</div>
 								<div class="news__control control">
-									<svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg class="swiper-button-prev" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM22 10.5L2 10.5V13.5L22 13.5V10.5Z" fill="#D1D1D1"/>
 									</svg>
 									<div class="control__dots">
-										<span class="_active"></span>
-										<span></span>
+										<div class="swiper-pagination"></div>
 									</div>
-									<svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg class="swiper-button-next" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path class="_active" d="M21.0607 13.0607C21.6464 12.4749 21.6464 11.5251 21.0607 10.9393L11.5147 1.3934C10.9289 0.807611 9.97919 0.807611 9.3934 1.3934C8.80761 1.97919 8.80761 2.92893 9.3934 3.51472L17.8787 12L9.3934 20.4853C8.80761 21.0711 8.80761 22.0208 9.3934 22.6066C9.97919 23.1924 10.9289 23.1924 11.5147 22.6066L21.0607 13.0607ZM0 13.5L20 13.5V10.5L0 10.5L0 13.5Z" fill="#D1D1D1"/>
 									</svg>
 								</div>
 							</div>
-							<div class="news__slider swiper-wrapper">
+							<div class="news__container swiper-wrapper _active">
 								<div class="news__slider-item swiper-slide">
 									<a class="news__slider-link" href="">
 										<div class="news__slider-top">
@@ -687,6 +766,102 @@
 											<div class="news__slider-more">
 												<h5>Читать далее</h5>
 												<span>24.01.2019</span>										
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="news__container swiper-wrapper">
+								<div class="news__slider-item swiper-slide">
+									<a class="news__slider-link" href="">
+										<div class="news__slider-top">
+											<img src="img/sl2-02.jpg" alt="Слайд">
+										</div>
+										<div class="news__slider-bottom">
+											<div class="news__slider-text">
+												<h3>Индексация размера оплаты</h3>
+												<p>С 01.04.2019 года производится индексация размера платы на 3,64%</p>
+											</div>
+											<div class="news__slider-more">
+												<h5>Читать далее</h5>
+												<span>1.03.2019</span>										
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="news__slider-item swiper-slide">
+									<a class="news__slider-link" href="">
+										<div class="news__slider-top">
+											<img src="img/sl2-03.jpg" alt="Слайд">
+										</div>
+										<div class="news__slider-bottom">
+											<div class="news__slider-text">
+												<h3>
+													Ограничение на проезд тяжелой техники
+												</h3>
+												<p>В КП "Альпийская долина", "Ёлки", "Ушаково" и "Есенино" закрыт проезд для грузовой техники</p>
+											</div>
+											<div class="news__slider-more">
+												<h5>Читать далее</h5>
+												<span>25.03.2019</span>										
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="news__slider-item swiper-slide">
+									<a class="news__slider-link" href="">
+										<div class="news__slider-top">
+											<img src="img/sl2-04.jpg" alt="Слайд">
+										</div>
+										<div class="news__slider-bottom">
+											<div class="news__slider-text">
+												<h3>
+													В «Есенино» появилось видеонаблюдение
+												</h3>
+												<p>В парке отдыха КП "Есенино" запущено видеонаблюдение.</p>
+											</div>
+											<div class="news__slider-more">
+												<h5>Читать далее</h5>
+												<span>24.01.2019</span>										
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="news__container swiper-wrapper">
+								<div class="news__slider-item swiper-slide">
+									<a class="news__slider-link" href="">
+										<div class="news__slider-top">
+											<img src="img/sl2-01.jpg" alt="Слайд">
+										</div>
+										<div class="news__slider-bottom">
+											<div class="news__slider-text">
+												<h3>
+													Итоги зимнего праздника 
+													в «Альпийской долине»
+												</h3>
+												<p>Вот и наступила Масленичная неделя — праздник, справедливо считающийся одним из самых «кулинарных» праздников</p>
+											</div>
+											<div class="news__slider-more">
+												<h5>Читать далее</h5>
+												<span>4.03.2019</span>										
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="news__slider-item swiper-slide">
+									<a class="news__slider-link" href="">
+										<div class="news__slider-top">
+											<img src="img/sl2-02.jpg" alt="Слайд">
+										</div>
+										<div class="news__slider-bottom">
+											<div class="news__slider-text">
+												<h3>Индексация размера оплаты</h3>
+												<p>С 01.04.2019 года производится индексация размера платы на 3,64%</p>
+											</div>
+											<div class="news__slider-more">
+												<h5>Читать далее</h5>
+												<span>1.03.2019</span>										
 											</div>
 										</div>
 									</a>
@@ -795,31 +970,33 @@
     </div>
 </footer>
 			<!-- Обратный звонок -->
-<div id="popup" class="popup">
-    <div class="popup__inner">
-        <div class="popup__content">
-            <div class="popup__head">
-                <h2 class="popup__title">Обратный звонок</h2>
-                <p>Оставьте контактные данные, и мы вам перезвоним!</p>
-                <img class="close-popup" src="./img/icons/close.svg" alt="Закрыть">
+<div id="popup-call" class="popup-call">
+    <div class="popup-call__inner">
+        <div class="popup-call__content">
+            <div class="popup-call__close">
+                <img src="./img/icons/close.svg" alt="Закрыть">
             </div>
-            <form class="popup-form" action="#" id="form">
-                <div>
-                    <input class="input" type="text" name="name" placeholder="Имя">
-                </div>
-                <div>
-                    <input class="input" type="tel" name="tel" placeholder="Телефон">
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="checkbox" id="checkbox">
-                    <label for="checkbox">
-                        Подтверждаю согласие с <a href="">политикой обработки персональных данных</a>
-                    </label>
-                </div>
-                <button type="submit" class="btn">
-                    Отправить
-                </button>
-            </form>
+            <h2 class="popup-call__title">Обратный звонок</h2>
+            <p class="popup-call__subtitle">Оставьте контактные данные, и мы вам перезвоним!</p>
+            <div class="popup-call__form">
+                <form action="#" id="form">
+                    <div>
+                        <input class="popup-call__form-input input" type="text" name="name" placeholder="Имя">
+                    </div>
+                    <div>
+                        <input class="popup-call__form-input input" type="tel" name="tel" placeholder="Телефон">
+                    </div>
+                    <div class="popup-call__form-checkbox checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox">
+                            Подтверждаю согласие с <a href="">политикой обработки персональных данных</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="popup-call__form-btn btn">
+                        Отправить
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
