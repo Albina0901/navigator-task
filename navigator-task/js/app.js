@@ -131,4 +131,4 @@ headerItem.addEventListener('click', function() {
 	headerNav.classList.remove('_active');
 	bodyLock.classList.remove('_lock');
 });
- 
+

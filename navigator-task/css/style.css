@@ -34,6 +34,13 @@ a {
   transition: all .4s;
 }
 
+a:hover {
+  color: #6BBD45;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
 h2 {
   max-width: 520px;
   font-weight: bold;
@@ -392,6 +399,20 @@ input {
           justify-content: space-between;
 }
 
+.header__nav-list li {
+  position: relative;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.header__nav-list li:hover > .header__dropdown {
+  display: block;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
 .header__nav-item {
   display: block;
   font-weight: bold;
@@ -451,6 +472,30 @@ input {
 
 .header__burger-menu {
   display: none;
+}
+
+.header__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border-top: 7px solid transparent;
+  -o-border-image: -o-linear-gradient(right, #2983d4 52%, #7ec95c 46%) 35% 40%;
+     border-image: -webkit-gradient(linear, right top, left top, color-stop(52%, #2983d4), color-stop(46%, #7ec95c)) 35% 40%;
+     border-image: linear-gradient(right, #2983d4 52%, #7ec95c 46%) 35% 40%;
+  width: 185px;
+  height: 300px;
+  padding: 25px;
+  z-index: 1000;
+}
+
+.header__dropdown-item {
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+  color: #675A54;
+  margin-bottom: 20px;
 }
 
 .offer {
