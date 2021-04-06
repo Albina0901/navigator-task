@@ -21,7 +21,7 @@ for (let i = 0; i < tabs.length; i++) {
 
 //Sliders
 let cottageSwiper = new Swiper('.cottage__slider', {
-	slidesPerView: 3,
+	slidesPerView: 4,
 	spaceBetween: 15,
 	pagination: {
 	  el: '.swiper-pagination',
@@ -41,7 +41,7 @@ let cottageSwiper = new Swiper('.cottage__slider', {
 	},
   });
 
-let swiper = new Swiper('.excellence__slider', {
+let excellenceSwiper = new Swiper('.excellence__slider', {
 slidesPerView: 4,
 spaceBetween: 15,
 breakpoints: {
@@ -57,8 +57,28 @@ breakpoints: {
 },
 });
 
+let aboutSwiper = new Swiper('.about__slider', {
+	slidesPerView: 1,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});
+
+let plotsSwiper = new Swiper('.plots__slider', {
+	spaceBetween: 100,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+
 let newsSwiper = new Swiper('.news__slider', {
-slidesPerView: 3,
+slidesPerView: 4,
 spaceBetween: 15,
 pagination: {
 	el: '.swiper-pagination',
@@ -82,14 +102,33 @@ breakpoints: {
 let headerBtn = document.querySelector('.header__btn');
 let popupCall = document.querySelector('.popup-call');
 let popupClose= document.querySelector('.popup-call__close');
+const bodyLock = document.querySelector('body');
 
 headerBtn.addEventListener('click', function() {
-	popupCall.style.visibility = "visible";
-	popupCall.style.opacity = "1";
+	popupCall.classList.toggle('_active');
+	bodyLock.classList.toggle('_lock');
 });
-
 popupClose.addEventListener('click', function() {
-	popupCall.style.visibility = "hidden";
-	popupCall.style.opacity = "0";
+	popupCall.classList.toggle('_active');
+	bodyLock.classList.toggle('_lock');
 });
 
+// Burger-menu
+let headerMenu = document.querySelector('.header__burger');
+let headerBurger = document.querySelector('.header__burger-menu');
+let headerNav = document.querySelector('.header__nav');
+let headerItem = document.querySelector('.header__nav-item');
+
+headerMenu.addEventListener('click', function() {
+	headerBurger.classList.toggle('_active');
+	bodyLock.classList.toggle('_lock');
+});
+headerMenu.addEventListener('click', function() {
+	headerNav.classList.toggle('_active');
+});
+headerItem.addEventListener('click', function() {
+	headerBurger.classList.remove('_active');
+	headerNav.classList.remove('_active');
+	bodyLock.classList.remove('_lock');
+});
+ 
